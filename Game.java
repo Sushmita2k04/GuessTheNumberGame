@@ -1,3 +1,6 @@
+package GuessTheNumberGame;
+
+
 import java.util.Random;
 import java.util.Scanner;
 
@@ -18,6 +21,7 @@ class game{
         this.number = rand.nextInt(100);
     }
     void takeUserInput( ){
+        @SuppressWarnings("resource")
         Scanner sc = new Scanner(System.in);
         System.out.println("guess the number the number: ");
         inputNumber = sc.nextInt();
